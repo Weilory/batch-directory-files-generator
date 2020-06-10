@@ -8,19 +8,19 @@ batch: command prompt works but neither file.cmd nor file.bat
 <h2>set /p directory=</h2>
 <b>similar to ruby, for instructional messages, echo it before the line of set /p variable</b>
 <br />
-```batch
-echo Create a directory named: 
-set /p directory=
+```batch<br />
+echo Create a directory named: <br />
+set /p directory=<br />
 ```
 <br /><br />
 <li>
 * in batch scripts, user input should be described with double quotes and double percentage signs, for example "%directory%", otherwise the whitespace mess up. <br />
-```batch
-rem collected variable above is written followed then as:
-"%directory%"
-rem for example
-if "%directory%" equ "" ()
-rem which validates empty input
+```batch<br />
+rem collected variable above is written followed then as:<br />
+"%directory%"<br />
+rem for example<br />
+if "%directory%" equ "" ()<br />
+rem which validates empty input<br />
 ```
 </li>
 <li>
@@ -41,14 +41,14 @@ rem which validates empty input
 <br /><br />
 <li>
 * iterate each line of pat.txt: <br />
-```batch
-rem cmd
-for /F "delims=," %i in (pat.txt) do ()
+```batch<br />
+rem cmd<br />
+for /F "delims=," %i in (pat.txt) do ()<br />
 ```
 * attention that batch iteration differs from cmd iteration, which in batch, the variable must be %%i, otherwise it won't work. <br />
-```batch
-rem batch
-for /F "delims=," %%i in (pat.txt) do ()
+```batch<br />
+rem batch<br />
+for /F "delims=," %%i in (pat.txt) do ()<br />
 ```
 </li>
 
