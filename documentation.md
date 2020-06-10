@@ -7,13 +7,14 @@ batch: command prompt works but neither file.cmd nor file.bat
 <hr />
 <h2>set /p directory=</h2>
 <b>similar to ruby, for instructional messages, echo it before the line of set /p variable</b>
+<br />
 ```batch
 echo Create a directory named: 
 set /p directory=
 ```
 <br /><br />
 <li>
-* in batch scripts, user input should be described with double quotes and double percentage signs, for example "%directory%", otherwise the whitespace mess up. 
+* in batch scripts, user input should be described with double quotes and double percentage signs, for example "%directory%", otherwise the whitespace mess up. <br />
 ```batch
 rem collected variable above is written followed then as:
 "%directory%"
@@ -39,12 +40,12 @@ rem which validates empty input
 <hr />
 <br /><br />
 <li>
-* iterate each line of pat.txt: 
+* iterate each line of pat.txt: <br />
 ```batch
 rem cmd
 for /F "delims=," %i in (pat.txt) do ()
 ```
-* attention that batch iteration differs from cmd iteration, which in batch, the variable must be %%i, otherwise it won't work. 
+* attention that batch iteration differs from cmd iteration, which in batch, the variable must be %%i, otherwise it won't work. <br />
 ```batch
 rem batch
 for /F "delims=," %%i in (pat.txt) do ()
