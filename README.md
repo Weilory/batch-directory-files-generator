@@ -1,6 +1,9 @@
 <h1>Batch Direcotry Files Generator</h1>
 <hr />
-Windows 10<br />
+
+![exp](https://github.com/Weilory/batch-directory-files-generator/blob/master/docs/gif/exp.gif)
+
+Microsoft Windows10<br />
 <br />
 Increase productivity for many files generation<br />
 <b>create a folder in current directory based on input name, generate files into folder based on pat.txt</b>
