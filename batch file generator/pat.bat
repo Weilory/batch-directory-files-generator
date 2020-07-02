@@ -1,4 +1,5 @@
 @echo off
+SETLOCAL
 
 :dir_loop
 	echo Create a directory named: 
@@ -31,3 +32,5 @@
 		cd. > %%i
 		cd..
 	)
+
+ENDLOCAL
